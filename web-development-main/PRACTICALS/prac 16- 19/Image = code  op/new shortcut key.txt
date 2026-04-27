@@ -1,0 +1,3 @@
+select folder 
+press f2(rename)
+then press tab key for scroll and change other without repeating

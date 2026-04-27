@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background: #222;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav {
+  margin: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 8px 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #fff;
+  color: #222;
+  border-radius: 4px;
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Interactive Button</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #toggleBtn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    #toggleBtn.active {
+      background: #28a745;      
+    }
+    #info.hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Interactive Button Practical</h2>
+  <button id="toggleBtn">Show Details</button>
+  <p id="info" class="hidden">
+    This is some extra content that can be shown or hidden.
+  </p>
+  <script src="button.js"></script>
+</body>
+</html>

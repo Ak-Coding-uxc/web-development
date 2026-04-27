@@ -1,0 +1,21 @@
+body{
+    background-color: lightgreen;
+    margin: 20px;
+}
+
+h1{
+    border-bottom: 5px solid blue;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    color: RED;
+    background-color: aqua;
+}
+
+p{
+    border : 2px dashed green;
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: cornflowerblue;
+}

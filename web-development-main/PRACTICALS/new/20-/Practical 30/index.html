@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Content</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin: 50px; }
+        #content { background: #f0f0f0; padding: 20px; min-height: 100px; border: 2px solid #333; }
+        button { margin: 10px; padding: 10px 20px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Content Demo</h1>
+    <div id="content">Click a button to change this content!</div>
+    <br>
+    <button onclick="changeContent('welcome')">Welcome Message</button>
+    <button onclick="changeContent('news')">Latest News</button>
+    <button onclick="changeContent('about')">About Us</button>
+    <button onclick="clearContent()">Clear</button>
+    <script src="script.js"></script>
+</body>
+</html>

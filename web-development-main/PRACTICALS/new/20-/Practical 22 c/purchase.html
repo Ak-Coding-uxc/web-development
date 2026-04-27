@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchase Flower</title>
+    <script>
+        function setFlower() {
+            var params = new URLSearchParams(window.location.search);
+            var f = params.get("flower");
+            if (!f) {
+                f = "Flower";
+            }
+            document.getElementById("fname").value = f;
+            document.getElementById("heading").innerHTML = "Purchase " + f;
+        }
+    </script>
+</head>
+<body onload="setFlower()">
+<h2 id="heading">Purchase Flower</h2>
+<form>
+    Flower:
+    <input type="text" id="fname" name="flower" readonly><br><br>
+    Name:
+    <input type="text" name="name"><br><br>
+    Phone No.:
+    <input type="text" name="phone"><br><br>
+    Select your item:
+    <select name="item">
+        <option> Bouquet </option>
+        <option> Single Stem </option>
+        <option> Basket </option>
+    </select><br><br>
+    Select the size:
+    <select name="size">
+        <option> Small </option>
+        <option> Medium </option>
+        <option> Large </option>
+    </select><br><br>
+    Enter your comments:<br>
+    <textarea name="comments" rows="4" cols="30"></textarea><br><br>
+    <input type="submit" value="Buy">
+</form>
+</body>
+</html>

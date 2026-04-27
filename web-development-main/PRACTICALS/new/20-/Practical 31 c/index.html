@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> Practical 31</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+    }
+    label{
+        display: block;
+    }
+    input{
+        padding: 6px;
+        width: 220px;
+    }
+    .error { 
+        color: red; 
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+    <h2>Form validating using JavaScript</h2>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
+        <div id="error" class="error"></div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+<script src="script.js"></script>
+</body>
+</html>
