@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Male/Female Team</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div style="border: 3px solid black">
+      <p style="color: Yellow; background-color: brown"><b>Male Names:-</b></p>
+      <div class="male">
+        <p id="main">Aman</p>
+        <p>Manish</p>
+        <p class="injured">Suraj</p>
+        <p class="injured">Mohammad Aman</p>
+        <p>Vishnu</p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div style="border: 2px solid black">
+      <p style="color: pink; background-color: brown"><b>Female Names:-</b></p>
+      <div class="female">
+        <p id="main">Neha</p>
+        <p class="injured">Sapna</p>
+        <p class="injured">Kajol</p>
+        <p>Alia</p>
+        <p>Katrina</p>
+      </div>
+    </div>
+
+    <br />
+
+    <forms>
+      <div>
+        <label for="name">Enter new <b>Players name</b></label>
+        <input
+          type="text"
+          id="name"
+          name="New players"
+          placeholder="Name of Player"
+        />
+      </div>
+
+      <br />
+      <div>
+        <label for="gender">Enter<b> Gender </b>of Player</label>
+        <input
+          type="text"
+          name="gender"
+          id="gender"
+          placeholder="Gender of Player"
+        />
+      </div>
+      <br />
+      <div>
+        <div>
+          <span>Select <b>Review</b> here for my Code => <br /></span>
+          <input type="radio" name="review" id="like" />
+          <label for="like">I <b>like</b> your code</label>
+        </div>
+        <div>
+          <input type="radio" name="review" id="no" />
+          <label for="no">I <b>don't like</b> your code</label>
+        </div>
+      </div>
+      <br />
+      <div>
+        <label for="review">Write <b>Big Review</b> here for my Code => </label>
+        <br />
+        <textarea
+          name="Review"
+          id="review"
+          placeholder="Enter review about my code"
+        ></textarea>
+      </div>
+    </forms>
+  </body>
+</html>

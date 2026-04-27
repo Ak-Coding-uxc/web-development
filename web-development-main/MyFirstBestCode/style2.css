@@ -1,0 +1,23 @@
+.male{
+    color: blueviolet;
+    background-color: lightgoldenrodyellow;
+}
+
+#main{
+    color: chartreuse;
+}
+
+.female{
+    color: orange;
+    background-color: lightgoldenrodyellow;
+
+}
+
+.injured{
+    color: red;
+}
+
+body{
+    background-color: lightblue;
+}
+

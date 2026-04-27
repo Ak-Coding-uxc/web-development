@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* Website url:- https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+    /* In text shadow only shrud is not available (4th wala) */
+    :root {
+      /* Global custom variable can be used anywhere */
+      --primary-color: brown;
+      --custom-width: 330px;
+    }
+
+    .container {
+      background-color: beige;
+      height: 650px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      /* --primary-color:brown;  local custom variable*/
+      /*Custom variable  */
+      /* --custom-width:330px; */
+      background-color: aqua;
+      /* width:330px; */
+      width: var(
+        --custom-width
+      ); /*Write var(_variable name_) to use custom varibel  */
+      height: 330px;
+      border: 1px solid var(--primary-color);
+      /* Custom vaariable can be use in there only not outside of this */
+      margin: 5px;
+      padding: 5px;
+      overflow: auto;
+
+      /* box-shadow: -10px 26px  green ; 1*/
+      /* box-shadow: -10px 26px 70px green ; 2*/
+      /* box-shadow: -10px 26px 70px 16px green ; 3*/ /* x-offset,y-offset , blur , spread(felana)*/
+
+      /* align-self: center; */
+
+      /* box-shadow: 10px 15px 5px 100px pink; 3*/
+
+      /* box-shadow: inset 4px 3px green; 4*/
+
+      /* box-shadow: 10px 15px var(--primary-color), 15px 28px green;  */
+      /* 5  two shadows together in one box*/
+    }
+
+    #head {
+      /* Text shadow */
+      /* text-shadow: 12px 13px 2px rgb(10, 36, 184); */
+      /* Write in any order */
+      /* text-shadow: white 3px 5px; */
+
+      color: rgb(230, 9, 46);
+      /* text-shadow: 12px 13px; */
+      /* IN this shadow color is same as color */
+
+      text-shadow: 3px 4px green, 11px 21px red, 16px 14px brown;
+
+      /* hw
+        multiple text shaow add karni h 3 in head par */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="bat.jpg" alt="Batman riding his car" />
+        <h2 id="head">Welcome to my website</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+          libero odio veniam eveniet eos praesentium, temporibus reiciendis
+          obcaecati voluptatem error explicabo optio fuga? Sapiente voluptatem
+          harum quos labore cumque doloribus impedit modi similique dolorem?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

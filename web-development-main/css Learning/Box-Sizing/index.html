@@ -1,0 +1,51 @@
+<!-- Box Model -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        #box{
+            /* height: 180px;
+            width: 200px; */
+            /* margin: 4px;
+            padding: 4px; */
+           /* box-sizing: content-box;  only content size */
+            box-sizing:border-box; /* content + padding + border = 100 */
+            height: 100px;
+            border: 3px solid green;
+            padding: 5px;
+            margin: 10px;
+            /* width: 200px; */
+            /* margin: 45px;
+            padding: 78px;
+            border: 3px solid green; */
+
+        }
+/* inline style > id > class > element > universal selector */
+        /* .boxMain{
+            /* margin: 7px 0px 2px 11px; top right bottom left*/
+            /* margin: 17px 18px; top & bottom // right & left 
+        }
+
+        .bx{
+            border : solid black;/* Key : values  
+            border-radius : 8px;
+
+        } */
+
+
+    </style>
+ </head>
+ <body>
+  
+    <div class = "boxMain bx" id="box">  <!-- Attribute = value -->
+        <p>
+            Hello This is Great Paragraph
+        </p>
+    </div>
+ </body>
+ </html>
