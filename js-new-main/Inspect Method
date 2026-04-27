@@ -1,0 +1,8 @@
+/* 
+== Steps to see methods in CHROME.
+1. Open inspect in chrome.
+2. Then go on console option.
+3. Write
+   const myArr = [1,2,3]// Then Press ENTER
+   myArr // Then Press ENTER
+*/
